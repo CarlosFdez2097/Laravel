@@ -14,7 +14,11 @@ class SongController extends Controller
      */
     public function index()
     {
-        //
+        return response()->json([
+            'id' =>  "001",
+            'title' => "Carlos",
+            'time' => "150"
+        ]);
     }
 
     /**
@@ -44,12 +48,12 @@ class SongController extends Controller
      * @param  \App\Song  $song
      * @return \Illuminate\Http\Response
      */
-    public function show(Song $song)
+    public function show()
     {
         return response()->json([
-            'id' => $song-> "001",
-            'title' => $song->"Carlos",
-            'time' => $song->"150"
+            'id' =>  "001",
+            'title' => "Carlos",
+            'time' => "150"
         ]);
 
     }
